@@ -4,18 +4,131 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Smart Bus ticketing</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
         <!-- tailwind and daisyUi cdn link start -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
         <!-- tailwind and daisyUi cdn link end -->
-    </head>
+        <!-- google fonts start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
 
-    <body>
+   <style>
+    .font-raleway{
+      font-family: "Raleway", sans-serif;
+    }
+
+   </style>
+
+    
+    <body class="font-raleway">
+        
+        <!-- header section start  -->
+       <header class="container max-w-7xl mx-auto">
+        <!-- navbar start -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Destination</a></li>
+                  <li><a href="">Search</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-3xl font-bold">P-ticketing</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Destination</a></li>
+                <li><a href="">Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#1cd10028] text-[#1DD100] text-2xl font-bold">Bus <img src="images/bus-icon.png" alt=""> </a>
+            </div>
+          </div>
+        <!-- navbar end -->
+        <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+            <!-- <div class="hero-overlay rounded-[32px] bg-opacity-60"></div> -->
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-3xl">
+                <h1 class="mb-5 text-5xl leading-snug font-bold text-white">End-to-End Travel with <br><span class="text-[#1DD100]"> P Paribahan</span></h1>
+                <p class="mb-5 text-white">Public transportation is a vital component of urban mobility, providing a cost-effective and environmentally friendly alternative to private vehicles.s.</p>
+                <button class="btn btn-secodary font-bold bg-[#1DD100] text-black border-none">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- more detail div part -->
+           <div class=" flex flex-wrap px-8  justify-around relative lg:-top-12">
+            <!-- first div  -->
+            <div class="flex  bg-white border-b-2 border-[#1DD100] w-full lg:w-64 p-5 rounded-xl h-24">
+                <img src="images/people.png" alt="">
+                <div class="ml-4 ">
+                    <h1 class="text-4xl font-bold">500K+</h1>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <!-- second div  -->
+            <div class="flex my-5 lg:my-0 bg-white border-b-2 border-[#1DD100] w-full lg:w-64 p-5 rounded-xl h-24">
+                <img src="images/ticket-cupon.png" alt="">
+                <div class="ml-4 ">
+                    <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                    <p>Tickets sold</p>
+                </div>
+            </div>
+            <!-- third div  -->
+            <div class="flex bg-white border-b-2 border-[#1DD100] w-full lg:w-64 p-5 rounded-xl h-24">
+                <img src="images/stoppage.png" alt="">
+                <div class="ml-4 ">
+                    <h1 class="text-4xl font-bold">80K+</h1>
+                    <p>Rental partners</p>
+                </div>
+            </div>
+            
+           </div>
+
+
+       </header>
+        <!-- header section end  -->
+
+       <!-- main section start  -->
+       <main class="container max-w-7xl mx-auto">
+        <section>
+            <h1 class="text-center text-3xl font-bold">Best offers for you</h1>
+
+            <div>
+                <div class="w-1/2 h-64 flex items-center  bg-orange-400 rounded-3xl ">
+                    <div class="flex items-center justify-center w-1/2 h-full " >
+                        <p><span class="text-3xl font-bold">15% OFF</span><br>
+                           <span class="font-bold"> on your next purchase</span> <br>
+                            <span class="text-gray-500">use by January 2024</span></p>
+                    </div>
+                    <div >
+                        <p class="text-3xl font-bold font-raleway">NEW15</p>
+                        <p>Coupon Code</p>
+
+                    </div>
+
+                </div>
+            </div>
 
 
 
 
+        </section>
+       </main>
+   
 
 
 
