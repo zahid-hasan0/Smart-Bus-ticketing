@@ -467,6 +467,7 @@
 
                     </div>
                     <div class="form px-7 mt-10">
+                      
                       <label class="font-extrabold" for="">Passenger Name<span class="text-2xl">*</span></label>
                       <input type="text" placeholder="Type here" class="input input-bordered input-lg w-full " /><br><br>
                       <label class="font-extrabold" for="">Phone Number<span class="text-2xl">*</span></label>
@@ -474,7 +475,24 @@
                       <label class="font-extrabold" for="">Email ID</label>
                       <input type="email" placeholder="Type here" class="input input-bordered input-lg w-full " /><br><br>
 
-                      <button onclick="clickme()" class="btn btn-xs w-full sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] text-white font-extrabold">Next</button>
+                      <!-- You can open the modal using ID.showModal() method -->
+                                    <!-- Open the modal using ID.showModal() method -->
+                                            <button class="btn btn-xs w-full sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] text-white font-extrabold" onclick="my_modal_5.showModal()">open modal</button>
+                                            <dialog id="my_modal_5" class="modal modal-bottom max-w-4xl mx-auto sm:modal-middle">
+                                              <div class="modal-box flex flex-col items-center space-y-3 ">
+                                                <img src="images/success.png" alt="">
+                                                <h3 class="font-bold text-lg text-[#27AE60]">SUCCESS!</h3>
+                                                <p class="py-4 text-center font-semibold">Thank you for Booking Our Bus Seats. 
+                                                  We are working hard to find the best service and deals for you. <br>
+                                                  <span class="font-light">Shortly you will find a confirmation in your email</span></p>
+                                                <div class="modal-action">
+                                                  <form method="dialog">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn  w-96 btn-lg bg-[#27AE60] text-white font-extrabold">Continue</button>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                            </dialog>
 
                       <div class="flex justify-around mt-5">
                         <a class="underline"  href="">Terms and Conditions</a>
