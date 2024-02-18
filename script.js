@@ -85,13 +85,13 @@ for (let seatInfo of seats){
                     let grand = taka-((taka*20)/100);
                   
                         document.getElementById('grand-total').innerText=grand;
-                        document.getElementById('cupon').value="";
+                        
 
                         
                 }
                 else{
 
-                    
+                    alert("invalid Cupon code")
                     document.getElementById('grand-total').innerText=taka;
 
                 }
