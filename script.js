@@ -106,11 +106,15 @@ for (let seatInfo of seats){
 
                         
                 }
+                else{
+
+                    document.getElementById('grand-total').innerText=taka;
+                    let hideE=document.getElementById("discount-container")
+                            
+                            hideE.classList.add('hidden')
+
+                }
               
-                document.getElementById('grand-total').innerText=taka;
-                let hideE=document.getElementById("discount-container")
-                        
-                        hideE.classList.add('hidden')
 
 
             })
