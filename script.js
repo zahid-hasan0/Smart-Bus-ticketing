@@ -87,7 +87,11 @@ for (let seatInfo of seats){
                 //    let amount = parseInt(document.getElementById('grand-total').innerText)
                   
                         document.getElementById('grand-total').innerText=parseInt(grand);
-                        // document.getElementById('cupon').value="";
+                        let hideE=document.getElementById("discount-container")
+                        
+                        hideE.classList.add('hidden')
+                        
+
                         
                         
                 }
@@ -96,18 +100,17 @@ for (let seatInfo of seats){
                     let grand = taka-((taka*20)/100);
                   
                         document.getElementById('grand-total').innerText=grand;
+                        let hideE=document.getElementById("discount-container")
                         
+                        hideE.classList.add('hidden')
 
                         
                 }
-                else{
-
-                    alert("invalid Cupon code")
-                    document.getElementById('grand-total').innerText=taka;
-
-                }
-                
-
+              
+                document.getElementById('grand-total').innerText=taka;
+                let hideE=document.getElementById("discount-container")
+                        
+                        hideE.classList.add('hidden')
 
 
             })
