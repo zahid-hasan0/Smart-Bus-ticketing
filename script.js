@@ -19,8 +19,22 @@ for (let seatInfo of seats){
     
     seatInfo.addEventListener("click",function(){
         
-        seatInfo.style.backgroundColor="#1DD100"
-        seatInfo.style.backgroundColor="pointer"
+
+
+        if(mySeatValue <= 3){
+
+            seatInfo.style.backgroundColor="#1DD100"
+            seatInfo.style.backgroundColor="pointer"
+
+        }
+        else{
+
+            alert("you already buy 4 ticket ")
+            // seatInfo.style.backgroundColor="red"
+            seatInfo.style.backgroundColor="pointer"
+            return;
+        }
+       
         
         let mySeat =seatInfo.innerText
        const newP=document.createElement('p');
@@ -53,10 +67,7 @@ for (let seatInfo of seats){
 
         document.getElementById('amount').innerText =taka;
 
-        if(taka > 2250 && seatCounts > 3){
-            
-            alert("You already buy 4 Ticket")
-        }
+        
 
         // discount section 
        
@@ -80,7 +91,7 @@ for (let seatInfo of seats){
                         
                         
                 }
-                else if (offerIs === "COUPLE20"){
+                else if (offerIs === "COUPLE 20"){
 
                     let grand = taka-((taka*20)/100);
                   
