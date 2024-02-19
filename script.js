@@ -23,7 +23,8 @@ for (let seatInfo of seats){
 
         if(mySeatValue <= 3){
 
-            seatInfo.style.backgroundColor="#1DD100"
+            seatInfo.style.backgroundColor="#1DD100";
+            seatInfo.style.color = "#FFFFFF";
             seatInfo.style.backgroundColor="pointer"
 
         }
