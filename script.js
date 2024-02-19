@@ -13,7 +13,7 @@ function clickme(){
 //  second functionnality 
 let totalSeat=40;
 let mySeatValue=0;
-let seatCounts=1;
+
 let seats= document.getElementsByClassName("seat");
 for (let seatInfo of seats){
     
@@ -38,11 +38,11 @@ for (let seatInfo of seats){
         
         let mySeat =seatInfo.innerText
        const newP=document.createElement('p');
-       const addValue =document.createTextNode(seatCounts+" ."+ " "+mySeat) ;
+       const addValue =document.createTextNode(" "+mySeat) ;
         newP.appendChild(addValue);
         const ticketAd = document.getElementById('ticket-add');
        ticketAd.appendChild(newP);
-       seatCounts +=1;
+       
        totalSeat-=1;
        mySeatValue +=1;
 
@@ -63,7 +63,7 @@ for (let seatInfo of seats){
         const ticketAd2 = document.getElementById('ticket-add2');
        ticketAd2.appendChild(newP2);
 
-       let taka= (seatCounts*550)-550;
+       let taka= (mySeatValue*550);
 
         document.getElementById('amount').innerText =taka;
 
